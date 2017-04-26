@@ -4,11 +4,9 @@ import java.util.ArrayList;
 
 public class StationList {
 
+	static ArrayList<Station> gStat = new ArrayList<>();
 
-
-	static ArrayList gStat = new ArrayList();
-
-	public static ArrayList getgStat() {
+	public static ArrayList<Station> getgStat() {
 		return gStat;
 	}
 
@@ -17,9 +15,9 @@ public class StationList {
 		Station s = new Station(" STA 000", 77);
 		gStat.add(s);
 		gStat.add(new Station(" STA 001", 56));
-		gStat.add(new Station(" STA 002", 76));
+		gStat.add(new Station("STA 002", 76));
 
-		System.out.println("\n    =(O . O)=           Stations loaded  ! ! !\n\n");
+		System.out.println("\n    =(O . O)=           Stations loaded  ! ! !\n//  StationList.getgStat().get(0)\n");
 
 	}
 

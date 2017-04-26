@@ -1,29 +1,24 @@
 package Metro;
 
 public class Wagon {
-	private int ca; // capacity
+	private int c; // capacity
 
-	private boolean ma; // main wagon
+	private boolean m; // main wagon
 
-	public Wagon(boolean ma) {
-		if (ma == true)
-			ca = 340;
+	public Wagon(boolean m) {
+		this.m = m;
+		if (m == true)
+			c = 340;
 		else
-			ca = 350;
-		this.ma = ma;
+			c = 350;
 	}
 
-	public int getCa() {
-		return ca;
+	public int getC() {
+		return c;
 	}
 
 	public boolean isMa() {
-		return ma;
+		return m;
 	}
-
-	// <Integer> void startWagon() {
-	// Wagon w = new Wagon();
-	//
-	// }
 
 }
