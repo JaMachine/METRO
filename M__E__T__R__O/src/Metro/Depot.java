@@ -3,19 +3,27 @@ package Metro;
 import java.util.ArrayList;
 
 public class Depot {
-	ArrayList<Train> gLine = new ArrayList();
 
-
-
-	public void startTrain() {
-
-		gLine.add(new Train());
-
+	ArrayList <Wagon>wagons = new ArrayList<>();
+	
+	for(int i = 0; i < 50; i++){
+		wagons.add(new Wagon(false));
 	}
 
-	@Override
-	public String toString() {
-		return "Depot [ gLine =" + gLine + " ]";
-	}
+
+
+	/*
+	 * 
+	 * ArrayList<Train> gLine = new ArrayList();
+	 * 
+	 * 
+	 * 
+	 * public void startTrain() {
+	 * 
+	 * gLine.add(new Train());
+	 * 
+	 * }
+	 * 
+	 */
 
 }
