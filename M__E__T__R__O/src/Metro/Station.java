@@ -1,10 +1,14 @@
 package Metro;
 
+import java.util.ArrayList;
+
 public class Station {
 
 	private String name;
-	private int id;
+	private static int id = 0;
+	private int stationId;
 	private long cash = 0;
+	ArrayList<Passenger> passengers = new ArrayList<>();
 
 	public long getCash() {
 		return cash;
@@ -14,9 +18,10 @@ public class Station {
 		this.cash = cashbox;
 	}
 
-	public Station(String name, int id) {
+	public Station(String name) {
+		id++;
+		stationId = id;
 		this.name = name;
-		this.id = id;
 
 	}
 
