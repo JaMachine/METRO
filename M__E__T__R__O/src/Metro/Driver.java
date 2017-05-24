@@ -16,16 +16,16 @@ public class Driver {
 		int r = (int) ((Math.random() * 2));
 
 		if (r == 0) {
-			this.exp = 7 + (int) ((Math.random() * 5));
+			this.exp = 20 + (int) ((Math.random() * 5));
 		} else if (r == 1) {
-			this.exp = 17 + (int) ((Math.random() * 5));
+			this.exp = 50 + (int) ((Math.random() * 5));
 		} else {
-			this.exp = 27 + (int) ((Math.random() * 5));
+			this.exp = 100 + (int) ((Math.random() * 5));
 		}
 
 	}
 
-	public void minExp() {
+	public void rndExp() {
 		Random r = new Random();
 
 		this.exp += r.nextInt(20) - 15;

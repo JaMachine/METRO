@@ -38,7 +38,7 @@ public class Main {
 		for (Train t : trains) {
 			Driver d = drivers.poll();
 			System.out.println("driver " + d + " on train " + t);
-			d.minExp();
+			d.rndExp();
 			drivers.add(d);
 
 		}
@@ -52,6 +52,7 @@ public class Main {
 			greenLine.stations.add(new Station("green" + i));
 			redLine.stations.add(new Station("red" + i));
 			blueLine.stations.add(new Station("blue" + i));
+			System.out.println(redLine.toString());
 			
 		}
 		

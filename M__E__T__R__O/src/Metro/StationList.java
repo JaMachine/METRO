@@ -7,7 +7,7 @@ public class StationList {
 	ArrayList<Station> gStat = new ArrayList<>();
 	ArrayList<Station> rStat = new ArrayList<>();
 
-	public static void startStations() {
+	public void startStations() {
 
 		Station s = new Station(" STA 000");
 		gStat.add(s);
